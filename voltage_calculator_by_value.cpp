@@ -6,7 +6,7 @@ Challenge: Passing by value
 #include <iostream>
 
 using namespace std;
-int calculate_voltage(double power, double current)   {
+int calculate_voltage_by_value(double power, double current)   {
     double volt;
     volt = power / current;
     return volt;
@@ -19,7 +19,7 @@ int main()
     cin >> power;
     cout << "Enter Current (A): ";
     cin >> current;
-    cout << "\nVoltage is: " << calculate_voltage(power, current) << endl;
+    cout << "\nVoltage is: " << calculate_voltage_by_value(power, current) << endl;
     
 
     return 0;
